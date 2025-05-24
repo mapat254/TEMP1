@@ -1,0 +1,25 @@
+title: "My Awesome Blog"
+description: "Ideas, inspirations, and more"
+baseurl: "" # jangan diubah jika di root
+url: "https://your-cloudflare-pages-url.pages.dev" # ganti dengan URL Cloudflare Pages kamu
+
+permalink: /:categories/:title/
+
+markdown: kramdown
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: Your Name
+
+collections:
+  posts:
+    output: true
